@@ -1,0 +1,12 @@
+# .yml Client Bootstrap file
+---
+spring:
+  application:
+    name: cloud-client
+  cloud:
+    config:
+      uri: http://localhost:8001
+
+---
+server:
+  port: 8002
