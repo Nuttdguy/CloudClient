@@ -1,12 +1,16 @@
-# .yml Client Bootstrap file
+ # .yml Client Bootstrap file
 ---
 spring:
+  profiles:
+    active: default
   application:
-    name: cloud-client
+    name: cloud-server
   cloud:
     config:
       uri: http://localhost:8001
 
----
 server:
   port: 8002
+
+#spring.cloud.config.uri = http://localhost:8001
+#server.port = 8002

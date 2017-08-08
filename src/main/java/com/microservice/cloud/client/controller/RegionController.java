@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RegionController {
 
-	@Value("${Region}") String region;
+	@Value("${Region.NorthAmerica}") 
+	String region;
 	
-	@RequestMapping(value = "/region")
+	@RequestMapping("/region")
 	public String showRegion() {
 		return "The region is: " + region;
 	}
